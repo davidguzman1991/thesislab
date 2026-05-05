@@ -19,11 +19,13 @@
 }
 
 html {
+  background: #0A0E17;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  background-color: #0A0E17;
   background:
     radial-gradient(circle at 18% 15%, rgba(143, 77, 255, 0.34), transparent 30%),
     radial-gradient(circle at 78% 8%, rgba(61, 244, 255, 0.22), transparent 28%),

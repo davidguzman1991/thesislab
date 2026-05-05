@@ -8,8 +8,9 @@
     content="Asesoría académica integral para tesis de pregrado y posgrado. Análisis de datos con Python/R, formato en LaTeX y preparación para defensa."
   />
   <title>Thesis-Lab | Asesoría Académica para Tesis con Análisis de Datos y LaTeX</title>
-  <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon.png" />
+  <link rel="icon" href="./imagenes/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" href="./imagenes/favicon.png" />
+  <link rel="preload" as="image" href="./imagenes/hero.webp" type="image/webp" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1051D3J9D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -88,7 +89,16 @@
           </div>
           <div class="owl-frame">
             <div class="neural-grid" aria-hidden="true"></div>
-            <img class="hero-owl-image" src="imagenes/hero.png" alt="Búho tecnológico Thesis-Lab" />
+            <picture>
+              <source srcset="./imagenes/hero.webp" type="image/webp" />
+              <img
+                class="hero-owl-image"
+                src="./imagenes/hero.png"
+                alt="Búho tecnológico de Thesis-Lab con interfaces de datos"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="dashboard-card card-bottom">
             <span>LaTeX</span>

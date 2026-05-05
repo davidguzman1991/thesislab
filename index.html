@@ -11,6 +11,102 @@
   <link rel="icon" href="./imagenes/favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" href="./imagenes/favicon.png" />
   <link rel="preload" as="image" href="./imagenes/hero.webp" type="image/webp" />
+  <style>
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      background: #0A0E17;
+      color: #f7fbff;
+    }
+
+    body {
+      font-family: "Manrope", sans-serif;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(5, 8, 23, 0.96);
+    }
+
+    .container {
+      width: min(100% - 40px, 1180px);
+      margin-inline: auto;
+    }
+
+    .nav,
+    .brand,
+    .hero-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav {
+      min-height: 78px;
+      justify-content: space-between;
+    }
+
+    .brand {
+      gap: 12px;
+      color: #f7fbff;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: #0A0E17;
+      color: #f7fbff;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 440px;
+    }
+
+    .hero-owl-image {
+      display: block;
+      max-width: 100%;
+      width: min(82%, 380px);
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .nav {
+        min-height: 64px;
+      }
+
+      .hero-grid {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .hero-visual {
+        min-height: 290px;
+      }
+
+      .hero-owl-image {
+        width: min(100%, 250px);
+      }
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1051D3J9D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -483,6 +579,6 @@
     🔍 Diagnóstico Gratuito de tu Tesis
   </a>
 
-  <script src="script.js"></script>
+  <script src="./script.js" defer></script>
 </body>
 </html>

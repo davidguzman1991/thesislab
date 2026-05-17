@@ -581,6 +581,58 @@
     🔍 Diagnóstico Gratuito de tu Tesis
   </a>
 
+  <!-- Mobile-only premium intent modal -->
+  <div class="mobile-premium-modal" data-premium-modal hidden>
+    <div class="mobile-premium-modal__overlay" data-premium-modal-close></div>
+    <section
+      class="mobile-premium-modal__card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="premium-modal-title"
+      aria-describedby="premium-modal-description"
+    >
+      <button class="mobile-premium-modal__close" type="button" data-premium-modal-close aria-label="Cerrar popup">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="mobile-premium-modal__badge" aria-label="ThesisLab asesoría premium">
+        <span>THESISLAB</span>
+        <strong>ASESORÍA PREMIUM</strong>
+      </div>
+
+      <h2 id="premium-modal-title">¿Necesitas ayuda real con tu tesis?</h2>
+      <p id="premium-modal-description">
+        En ThesisLab trabajamos proyectos del área de salud con enfoque metodológico y estadístico profesional.
+      </p>
+
+      <ul class="mobile-premium-modal__benefits" aria-label="Beneficios principales">
+        <li>
+          <span aria-hidden="true">
+            <svg viewBox="0 0 20 20"><path d="m4.5 10.4 3.4 3.4 7.6-8" /></svg>
+          </span>
+          Tesis desde $225
+        </li>
+        <li>
+          <span aria-hidden="true">
+            <svg viewBox="0 0 20 20"><path d="m4.5 10.4 3.4 3.4 7.6-8" /></svg>
+          </span>
+          Facilidades de pago
+        </li>
+        <li>
+          <span aria-hidden="true">
+            <svg viewBox="0 0 20 20"><path d="m4.5 10.4 3.4 3.4 7.6-8" /></svg>
+          </span>
+          Opciones con tarjeta de crédito
+        </li>
+      </ul>
+
+      <a class="mobile-premium-modal__cta" href="#planes" data-premium-modal-cta>Explorar planes</a>
+
+      <p class="mobile-premium-modal__trust">Asesoría especializada para universidades de Ecuador</p>
+      <p class="mobile-premium-modal__universities">UG · UCSG · UEES · UIDE · ESPOL · UNEMI · PUCE · y más</p>
+    </section>
+  </div>
+
   <script src="./script.js" defer></script>
 </body>
 </html>

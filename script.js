@@ -31,6 +31,7 @@ revealItems.forEach((item) => observer.observe(item));
 const premiumModal = document.querySelector("[data-premium-modal]");
 const premiumModalCloseItems = document.querySelectorAll("[data-premium-modal-close]");
 const premiumModalCta = document.querySelector("[data-premium-modal-cta]");
+const floatingDiagnosticCta = document.querySelector(".floating-diagnostic-cta");
 
 const premiumModalConfig = {
   minScroll: 280,
@@ -150,6 +151,7 @@ const initPremiumMobileModal = () => {
     rememberPremiumModalShownThisSession();
     isOpen = true;
     removeScrollListener();
+    floatingDiagnosticCta?.classList.add("is-hidden-by-premium-modal");
     premiumModal.hidden = false;
     requestAnimationFrame(() => premiumModal.classList.add("is-visible", "is-open"));
     console.log("Popup mostrado");
@@ -172,6 +174,7 @@ const initPremiumMobileModal = () => {
       if (!isOpen) {
         premiumModal.classList.remove("is-visible");
         premiumModal.hidden = true;
+        floatingDiagnosticCta?.classList.remove("is-hidden-by-premium-modal");
       }
     }, 330);
   };

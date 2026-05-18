@@ -846,6 +846,12 @@ h3 {
   filter: saturate(1.08);
 }
 
+.floating-diagnostic-cta.is-hidden-by-premium-modal {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 /* Premium mobile modal: hidden by default to avoid layout shifts. */
 .mobile-premium-modal[hidden] {
   display: none;
@@ -868,8 +874,9 @@ h3 {
 .mobile-premium-modal__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(4px);
+  background-color: rgba(13, 27, 42, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   opacity: 0;
   transition: opacity 280ms ease;
 }
@@ -1628,6 +1635,15 @@ h3 {
 @media (max-width: 767px) {
   .mobile-premium-modal {
     display: grid;
+  }
+
+  .mobile-premium-modal__card {
+    padding-bottom: 30px;
+  }
+
+  .mobile-premium-modal__universities {
+    font-size: 0.74rem;
+    line-height: 1.3;
   }
 }
 
